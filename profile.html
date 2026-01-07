@@ -3,82 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Profile | Hana Filia Fathina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Selamat Datang di Website Portofolio Saya Hana Filia Fathina</h1>
-    <hr>
+    <header class="header">
+        <h1>Hana Filia Fathina</h1>
+        <p class="subtitle">Website Portofolio Pribadi</p>
+    </header>
 
-    <table class="menu">
-        <tr>
-            <td><a href="index.html">Home</a> </td>
-            <td><a href="profile.html">Profile</a> </td>
-            <td><a href="karyaproject.html">Project</a> </td>
-            <td><a href="media.html">Media</a> </td>
-            <td><a href="informasi.html">Informasi</a> </td>
-            <td><a href="kontak.html">Kontak</a> </td>
-        </tr>
-    </table>
 
-    <hr>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="karyaproject.html">Project</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <h2>Data Diri</h2>
+    <main class="container">
+        <section class="section">
+            <h2>Profil Singkat</h2>
+        </section>
 
-    <table class="biodata">
-        <tr>
-            <th>Nama</th>
-            <td>:</td>
-            <td>Hana Filia Fathina</td>
-        </tr>
-        <tr>
-            <th>NIM</th>
-            <td>:</td>
-            <td>251011701127</td>
-        </tr>
-        <tr>
-            <th>Kelas</th>
-            <td>:</td>
-            <td>01SIFP017</td>
-        </tr>
-        <tr>
-            <th>Keahlian</th>
-            <td>:</td>
-            <td>HTML, CSS, dan Javascript </td>
-        </tr>
-         <tr>
-            <th>Minat</th>
-            <td>:</td>
-            <td>Web Developer </td>
-        </tr>
-        <tr>
-            <th>Pengalaman Kerja</th>
-            <td>:</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <th>Pendidikan</th>
-            <td>:</td>
-            <td>SMK</td>
-        </tr>
-        <tr>
-            <th>Kontak</th>
-            <td>:</td>
-            <td>081282450944</td>
-        </tr>
-        <tr>
-            <th>Email</th>
-            <td>:</td>
-            <td>filiafathina@gmail.com</td>
-        </tr>
-        <tr>
-            <th>Alamat</th>
-            <td>:</td>
-            <td>Bumi Puspitek Asri Sektor III, Pagedangan, Kabupaten Tangerang</td>
-        </tr>
-    </table>
+        <section class="section">
+            <h3>Data Diri</h3>
+            <div class="table-wrapper">
+                <table class="biodata-table">
+                    <tbody>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Hana Filia Fathina</td>
+                        </tr>
+                        <tr>
+                            <th>NIM</th>
+                            <td>251011701127</td>
+                        </tr>
+                        <tr>
+                            <th>Kelas</th>
+                            <td>01SIFP017</td>
+                        </tr>
+                        <tr>
+                            <th>Keahlian</th>
+                            <td>HTML, CSS, dan JavaScript</td>
+                        </tr>
+                        <tr>
+                            <th>Minat</th>
+                            <td>Web Developer</td>
+                        </tr>
+                        <tr>
+                            <th>Pengalaman Kerja</th>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th>Pendidikan</th>
+                            <td>SMK</td>
+                        </tr>
+                        <tr>
+                            <th>Kontak</th>
+                            <td>081282450944</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>filiafathina@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>
+                                Bumi Puspitek Asri Sektor III, Pagedangan,
+                                Kabupaten Tangerang
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Hana Filia Fathina Portofolio</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

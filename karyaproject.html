@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karya & Project</title>
+    <title>Karya & Project | Hana Filia Fathina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Selamat Datang di Website Portofolio Saya Hana Filia Fathina</h1>
-    <hr>
+    <header class="header">
+        <h1>Hana Filia Fathina</h1>
+        <p class="subtitle">Website Portofolio Pribadi</p>
+    </header>
 
-    <table class="menu">
-        <tr>
-            <td><a href="index.html">Home</a> </td>
-            <td><a href="profile.html">Profile</a> </td>
-            <td><a href="karyaproject.html">Project</a> </td>
-            <td><a href="media.html">Media</a> </td>
-            <td><a href="informasi.html">Informasi</a> </td>
-            <td><a href="kontak.html">Kontak</a> </td>
-        </tr>
-    </table>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="karyaproject.html" class="active">Project</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <hr>
+    <main class="container">
 
-    <h2>Karya & Project</h2>
-    <p>Berikut adalah karya atau project yang pernah saya buat:</p>
+        <section class="section">
+            <h2>Karya & Project</h2>
+            <p>
+                Berikut adalah beberapa karya dan project yang pernah saya buat
+                selama perkuliahan dan latihan pada mata kuliah
+                <strong>Pemrograman Web 1</strong>.
+            </p>
+        </section>
 
-    <table class="project" border="1" cellpadding="8" cellspacing="0">
-        <tr>
-            <th>No</th>
-            <th>Nama Project</th>
-            <th>Deskripsi</th>
-            <th>Tahun</th>
-        </tr>
+        <section class="section">
+            <div class="table-wrapper">
+                <table class="project-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Project</th>
+                            <th>Deskripsi</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Website Portofolio</td>
+                            <td>Website pribadi yang berisi profil, media, dan kontak.</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Website Berita</td>
+                            <td>Website dengan menu, sidebar, footer, dan form pencarian.</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Kalkulator Nilai Mahasiswa</td>
+                            <td>Aplikasi sederhana untuk menghitung nilai mahasiswa menggunakan array.</td>
+                            <td>2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-        <tr>
-            <td>1</td>
-            <td>Website Portofolio</td>
-            <td>Website pribadi berisi profil, media, dan kontak.</td>
-            <td>2025</td>
-        </tr>
+    </main>
 
-        <tr>
-            <td>2</td>
-            <td>Website Berita</td>
-            <td>Membuat layout yang berisi menu, footer, sidebar, dan form pencarian.</td>
-            <td>2025</td>
-        </tr>
+    <footer class="footer">
+        <p>&copy; 2026 Hana Filia Fathina Portofolio</p>
+    </footer>
 
-        <tr>
-            <td>3</td>
-            <td>Kalkulator Nilai Mahasiswa</td>
-            <td>Membuat kalkulator Nilai Mahasiswa dengan menggunakan array</td>
-            <td>2025</td>
-        </tr>
-    </table>
-
-    <p>
-        Semua project di atas merupakan hasil tugas dan latihan
-        pada mata kuliah Pemrograman Web 1.
-    </p>
-
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

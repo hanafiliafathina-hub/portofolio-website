@@ -3,87 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak</title>
+    <title>Kontak | Hana Filia Fathina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Selamat Datang di Website Portofolio Saya Hana Filia Fathina</h1>
-    <hr>
+    <header class="header">
+        <h1>Hana Filia Fathina</h1>
+        <p class="subtitle">Website Portofolio Pribadi</p>
+    </header>
 
-    <table class="menu">
-        <tr>
-            <td><a href="index.html">Home</a> </td>
-            <td><a href="profile.html">Profile</a> </td>
-            <td><a href="karyaproject.html">Project</a> </td>
-            <td><a href="media.html">Media</a> </td>
-            <td><a href="informasi.html">Informasi</a> </td>
-            <td><a href="kontak.html">Kontak</a> </td>
-        </tr>
-    </table>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="karyaproject.html">Project</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <hr>
+    <main class="container">
 
-    <h3>Informasi Kontak</h3>
-    <p>Email : filiafathina@email.com</p>
-    <p>No. Telp : 081282450944</p>
-    <p>Alamat : Tangerang, Indonesia</p>
-    <p>Jam Kerja : Senin - Jumat (08.00 - 16.00)</p>
+        <section class="section">
+            <h2>Informasi Kontak</h2>
+            <ul class="contact-info">
+                <li><strong>Email:</strong> filiafathina@email.com</li>
+                <li><strong>No. Telp:</strong> 081282450944</li>
+                <li><strong>Alamat:</strong> Tangerang, Indonesia</li>
+                <li><strong>Jam Kerja:</strong> Senin – Jumat (08.00 – 16.00)</li>
+            </ul>
+        </section>
 
-    <h3>Kirim Pesan</h3>
+        <section class="section">
+            <h3>Kirim Pesan</h3>
+            <form class="contact-form" onsubmit="return kirimPesan()">
+                <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="pesan" placeholder="Pesan" rows="5" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
 
-   <form onsubmit="return kirimPesan()">
-  <input type="text" id="nama" placeholder="Nama Lengkap">
-  <input type="email" id="email" placeholder="Email">
-  <textarea id="pesan" placeholder="Pesan"></textarea>
-  <button type="submit">Kirim</button>
-</form>
+        <section class="section">
+            <h3>Media Sosial</h3>
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
 
-   <section class="card">
-    <h3>Media Sosial</h3>
-    <ul>
-        <li>
-            <a href="https://www.linkedin.com" target="_blank">
-                LinkedIn
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com" target="_blank">
-                Instagram
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com" target="_blank">
-                Twitter
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com" target="_blank">
-                Facebook
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com" target="_blank">
-                GitHub
-            </a>
-        </li>
-    </ul>
-</section>
+    
+        <section class="section">
+            <h3>Lokasi</h3>
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78211.75563587548!2d106.58474161932122!3d-6.17647501902145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8e853d2e38d%3A0x301576d14feb9c0!2sTangerang%2C%20Kota%20Tangerang%2C%20Banten!5e1!3m2!1sid!2sid!4v1767454966625!5m2!1sid!2sid"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
 
-    <h3>Lokasi</h3>
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78211.75563587548!2d106.58474161932122!3d-6.17647501902145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8e853d2e38d%3A0x301576d14feb9c0!2sTangerang%2C%20Kota%20Tangerang%2C%20Banten!5e1!3m2!1sid!2sid!4v1767454966625!5m2!1sid!2sid"
-        width="400"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
+        <section class="section">
+            <h3>Pertanyaan Umum</h3>
+            <div class="faq">
+                <p class="question"> <b>Q: </b>Bagaimana cara menghubungi saya?</p>
+                <p class="answer">
+                   <B>A: </B> Anda dapat menghubungi saya melalui email atau form kontak di atas.
+                </p>
+            </div>
+        </section>
 
-    <h3>Pertanyaan Umum</h3>
-    <p><b>Q:</b> Bagaimana cara menghubungi kami?</p>
-    <p><b>A:</b> Anda dapat menghubungi kami melalui email atau form di atas.</p>
+    </main>
 
+    <footer class="footer">
+        <p>&copy;2026 Hana Filia Fathina Portofolio</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

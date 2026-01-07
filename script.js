@@ -1,30 +1,28 @@
+function kirimPesan() {
+    const nama = document.getElementById("nama").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const pesan = document.getElementById("pesan").value.trim();
 
-const formKontak = document.querySelector("form");
+    if (nama === "" || email === "" || pesan === "") {
+        alert("Harap lengkapi semua data sebelum mengirim pesan.");
+        return false;
+    }
 
-if (formKontak) {
-    formKontak.addEventListener("submit", function (event) {
-        const yakin = confirm("Apakah Anda yakin ingin mengirim pesan?");
-        if (!yakin) {
-            event.preventDefault();
+    alert("Terima kasih, pesan Anda berhasil dikirim!");
+    return true;
+}
+
+const sections = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        const posisi = section.getBoundingClientRect().top;
+        const tinggiLayar = window.innerHeight;
+
+        if (posisi < tinggiLayar - 100) {
+            section.style.opacity = 1;
+            section.style.transform = "translateY(0)";
         }
     });
-
-    function kirimPesan() {
-  let nama = document.getElementById("nama").value;
-  let email = document.getElementById("email").value;
-  let pesan = document.getElementById("pesan").value;
-
-  if (nama === "" || email === "" || pesan === "") {
-    alert("Semua kolom wajib diisi!");
-    return false;
-  }
-
-  alert("Pesan berhasil dikirim!");
-}
-
-const menuLink = document.querySelector(".menu a");
-
-menuLink.addEventListener("click", function () {
-    console.log("Membuka menu:", menuLink.textContent);
 });
-}
+

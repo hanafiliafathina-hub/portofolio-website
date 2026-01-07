@@ -1,50 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
+    <title>Media | Hana Filia Fathina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Selamat Datang di Website Portofolio Saya Hana Filia Fathina</h1>
 
-<hr>
+    <header class="header">
+        <h1>Hana Filia Fathina</h1>
+        <p class="subtitle">Website Portofolio Pribadi</p>
+    </header>
 
-<table class="menu">
-    <tr>
-        <td><a href="index.html">Home</a> </td>
-        <td><a href="profile.html">Profile</a> </td>
-        <td><a href="karyaproject.html">Project</a> </td>
-        <td><a href="media.html">Media</a> </td>
-        <td><a href="informasi.html">Informasi</a> </td>
-        <td><a href="kontak.html">Kontak</a> </td>
-    </tr>
-</table>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="karyaproject.html">Project</a></li>
+            <li><a href="media.html" class="active">Media</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-<hr>
 
-<h2>Media</h2>
+    <main class="container">
+    
+        <section class="section">
+            <h2>Media</h2>
+            <p>
+                Halaman ini menampilkan berbagai media pendukung seperti video,
+                audio, gambar, dan dokumen yang berkaitan dengan aktivitas dan
+                tugas perkuliahan saya.
+            </p>
+        </section>
 
-<h3>Video</h3>
-<video controls width="320">
-    <source src="video/Video unpam.mp4" type="video/mp4">
-</video>
+    
+        <section class="section media-section">
+            <h3>Video</h3>
+            <video controls class="media-video">
+                <source src="video/Video unpam.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </section>
 
-<h3>Audio</h3>
-<audio controls>
-    <source src="audio/funny-cartoon.mp3" type="audio/mpeg">
-</audio>
+        <section class="section media-section">
+            <h3>Audio</h3>
+            <audio controls class="media-audio">
+                <source src="audio/funny-cartoon.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung pemutar audio.
+            </audio>
+        </section>
 
-<h3>Gambar</h3>
-<img src="foto/unpam.jpg" width="300">
+        
+        <section class="section media-section">
+            <h3>Gambar</h3>
+            <img 
+                src="foto/unpam.jpg" 
+                alt="Universitas Pamulang"
+                class="media-image">
+        </section>
 
-<h3>Dokumen</h3>
-<a href="pdf/uas-pemrograman-web.pdf" target="_blank">
-    Klik di sini untuk membuka dokumen PDF
-</a>
+        <section class="section media-section">
+            <h3>Dokumen</h3>
+            <a 
+                href="pdf/uas-pemrograman-web.pdf" 
+                target="_blank" 
+                class="document-link">
+                📄 Klik di sini untuk membuka dokumen PDF
+            </a>
+        </section>
 
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Hana Filia Fathina Portofolio</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

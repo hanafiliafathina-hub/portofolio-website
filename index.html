@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Portofolio Sederhana</title>
+    <title>Portofolio | Hana Filia Fathina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Selamat Datang di Website Portofolio Saya Hana Filia Fathina</h1>
-    <hr>
+    <header class="header">
+        <h1>Hana Filia Fathina</h1>
+        <p class="subtitle">Website Portofolio Pribadi</p>
+    </header>
 
-    <table class="menu">
-        <tr>
-            <td><a href="index.html">Home</a> </td>
-            <td><a href="profile.html">Profile</a> </td>
-            <td><a href="karyaproject.html">Project</a> </td>
-            <td><a href="media.html">Media</a> </td>
-            <td><a href="informasi.html">Informasi</a> </td>
-            <td><a href="kontak.html">Kontak</a> </td>
-        </tr>
-    </table>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="karyaproject.html">Project</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <hr>
+    <main class="container">
+        <section class="intro">
+            <h2>Pemrograman Web 1</h2>
+            <h3>HTML, CSS, dan JavaScript</h3>
+            <p class="kampus">Sistem Informasi – Universitas Pamulang</p>
+        </section>
 
-    <h1>Pemograman Web 1 dengan HTML, CSS, dan JavaScript</h1>
-    <h2>Sistem Informasi</h2>
-    <h3>Universitas Pamulang</h3>
+        <section class="description">
+            <p>
+                Selamat datang di website portofolio saya.
+                Website ini dibuat sebagai portofolio sederhana sekaligus
+                untuk memenuhi tugas UAS mata kuliah Pemrograman Web 1.
+            </p>
+        </section>
+    </main>
 
-    <p>Terima kasih telah berkunjung pada website portofolio saya</p>
-    <p>Website ini saya buat sebagai website portofolio sederhana sekaligus untuk memenuhi tugas UAS mata kuliah Pemrograman Web 1</p>
+    <footer class="footer">
+        <p>&copy; 2026 Hana Filia Fathina Portofolio</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
